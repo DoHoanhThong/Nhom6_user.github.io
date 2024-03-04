@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0">
+    <title>Kết quả</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/themify-icons@1.0.0/css/themify-icons.css">
+
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .list-group{
+            margin-left:120px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .list-group-item {
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+        } 
+        #exam-header{
+            
+            background-color: #e3342f;
+            display: flex;
+            text-align: center;
+            position: sticky;
+            width: 100%;
+            top:0;
+            left:0;
+            right:0;
+            z-index: 2;
+        }
+        .home-icon{
+            color:#fff;
+            width: 160px;
+            padding-left: 20px;
+            padding-right:10px;
+            display: flex;
+        }
+        .home-icon:hover{
+            cursor: pointer;
+        }
+        .home-icon >i{
+            color:#fff;
+            padding-right: 5px;
+            line-height:48px;
+            font-style: normal;
+        }
+        #clock{
+            width: 100px;
+            position: fixed;
+            top: 64px;
+            left: 0;
+            align-items: center;
+            text-align: center;
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        #timeleft-warning{
+            display: none;
+        }
+        
+        .submit-section{
+            text-align: center;
+            padding:10px;
+        }
+
+        input[type=button], input[type=submit] {
+            /* box-sizing: border-box;
+            border-radius: 15px;
+            border: 1px solid #ff4422;
+            background-color: #ff310d;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: transform 80ms ease-in; */
+            color: #FFFFFF;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 12px 45px;
+        }   
+        /* input[type=button], input[type=submit]:hover{
+            background-color: #ff6448;
+            cursor: pointer;
+        } */
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="exam-header">
+                <a class="home-icon" onclick="exitPage()">
+                    <i class="ti-home" style="line-height: 46px; font-size: 20px;"></i>
+                    <i>Trang chủ</i>
+                </a>
+                <h3 style="width:100%;color: #fff;line-height: 46px; text-align: center;">Trang kết quả</h3>
+        </div>
+        
+        <div class="list-group">
+            <div class="list-group-item ">
+                <p><strong>Câu 1:</strong> Các thành phần cơ bản cho front-end Web là (có thể chọn nhiều đáp án):</p>
+                <form class="question-form" action="">
+
+                    <input class="q" type="checkbox" name="question" value="A"> A. Java<br>
+                    <input class="q" type="checkbox" name="question" value="B"> B. HTML<br>
+                    <input class="q" type="checkbox" name="question" value="C"> C. JS<br>
+                    <input class="q" type="checkbox" name="question" value="D"> D. CSS
+                </form>
+            </div>
+            <div class="alert alert-success" style="display: none;"></div>
+            <div class="list-group-item"> <p><strong>Câu 2:</strong> Để khai báo một phần tử điều khiển khi nhấn vào sẽ gửi thông tin của form đi, ta sử dụng thẻ nào?</p> 
+                <form class="question-form" action="">
+
+                    <input class="q" type="radio" name="question" value="A" > A. type="text"<br> 
+                    <input class="q" type="radio" name="question" value="B"> B. type="submit"<br> 
+                    <input class="q" type="radio" name="question" value="C"> C. type="password"<br>
+                    <input class="q" type="radio" name="question" value="D"> D. type="file"
+
+                </form>
+            </div>
+            <div class="alert alert-success" style="display: none;"></div>
+            <div class="list-group-item"> 
+                <p><strong>Câu 3:</strong> Để khai báo một phần tử điều khiển để mở một hộp thoại giúp người dùng mở một file trên hệ thống thư mục của máy tính, ta sử dụng thẻ nào?</p> 
+                <form class="question-form" action="">
+
+                    <input class="q" type="radio" name="question" value="A"> A. type="file"<br> <input class="q" type="radio" name="question" value="B"> B. type="button"<br> <input class="q" type="radio" name="question" value="C"> C. type="hidden"<br> <input class="q" type="radio" name="question" value="D"> D. type="image"
+                </form>
+            </div>
+            <div class="alert alert-success" style="display: none;"></div>
+            <div class="list-group-item"> <p><strong>CÂU 4:</strong> Đáp án nào là một thẻ đường dẫn?</p> 
+                <form class="question-form" action="">
+
+                    <input class="q" type="radio" name="question" value="A"> A. a<br> 
+                    <input class="q" type="radio" name="question" value="B"> B. div <br>   
+                    <input class="q" type="radio" name="question" value="C"> C. img <br>
+                    <input class="q" type="radio" name="question" value="D"> D. input
+
+                </form>
+            </div>
+            <div class="alert alert-success" style="display: none;"></div>
+            <div class="list-group-item"> <p><strong>CÂU 5:</strong> Tính năng nào trong Dreamweaver cho phép hiển thị trực quan của tài liệu?</p> 
+                <form class="question-form" action="">
+
+                    <input class="q" type="radio" name="question" value="A"> A. Code view<br> 
+                    <input class="q" type="radio" name="question" value="B"> B. Design view<br> 
+                    <input class="q" type="radio" name="question" value="C"> C. Combined view<br> 
+                    <input class="q" type="radio" name="question" value="D"> D. Layout view 
+                </form>
+            </div>
+            <div class="alert alert-success" style="display: none;"></div>
+    
+            <div class="list-group-item"> <p><strong>CÂU 6:</strong> CSS định nghĩa các style khác nhau cho cùng một loại phần tử HTML bằng cách sử dụng:</p> 
+                <form class="question-form" action="">
+
+                    <input class="q" type="radio" name="question" value="A"> A. Class selector<br> 
+                    <input class="q" type="radio" name="question" value="B"> B. Id selector<br> 
+                    <input class="q" type="radio" name="question" value="C"> C. Name selector<br>
+                    <input class="q" type="radio" name="question" value="D"> D. Type selector 
+                </form>
+            </div>
+            <div class="alert alert-success" style="display: none;"></div>
+            <div class="list-group-item"> <p><strong>CÂU 7:</strong> Để liên kết tới external style sheet, ta sử dụng thẻ nào?</p> 
+
+                <form class="question-form" action="">
+                    <input class="q" type="radio" name="question" value="A"> A. style<br> 
+                    <input class="q" type="radio" name="question" value="B"> B. a<br> 
+                    <input class="q" type="radio" name="question" value="C"> C. link<br> 
+                    <input class="q" type="radio" name="question" value="D"> D. css 
+                </form>
+            </div>
+            <div class="alert alert-success" style="display: none;"></div>
+            <div class="list-group-item"> <p><strong>CÂU 8:</strong> Dreamweaver sử dụng giao thức gì để tải một site cục bộ lên web server?</p> 
+                <form class="question-form" action="">
+
+                    <input class="q" type="radio" name="question" value="A"> A. Http<br> 
+                    <input class="q" type="radio" name="question" value="B"> B. Fpt<br> 
+                    <input class="q" type="radio" name="question" value="C"> C. Smtp<br> 
+                    <input class="q" type="radio" name="question" value="D"> D. Hmpt 
+                </form>
+            </div>
+            <div class="alert alert-success" style="display: none;"></div>
+            <div class="list-group-item"> <p><strong>CÂU 9:</strong> Dreamweaver cho phép làm việc với mấy cách trình bày tài liệu?</p> 
+                <form class="question-form" action="">
+
+                    <input class="q" type="radio" name="question" value="A"> A. 2<br> 
+                    <input class="q" type="radio" name="question" value="B"> B. 3<br> 
+                    <input class="q" type="radio" name="question" value="C"> C. 4<br> 
+                    <input class="q" type="radio" name="question" value="D"> D. 5 
+                </form>
+            </div>
+            <div class="alert alert-success" style="display: none;"></div>
+        </div>
+        <div id="show" class="alert alert-info" style="display: none; margin-left: 120px;">
+            <div id="grade"></div>
+            <div id="grade_10"></div>
+        </div>
+        <div class="submit-section" >
+            <button class="btn-danger" style="padding:15px 30px;" onclick="showGrade()">
+                Xem kết quả
+        </div>
+
+
+    </div>
+
+    <script>
+        var user_key=localStorage.getItem("k");
+        var list=document.getElementsByClassName("q");
+        var key="ABAAABDCA";
+        var count=document.getElementsByClassName("list-group-item").length,grade=0;
+        for(var i=0;i<list.length;i++){
+            list[i].style.display="none";
+        }
+        var m=document.getElementsByClassName("alert alert-success");
+            for(var i=0;i<m.length;i++){
+                    if(user_key[i]===key[i]){
+                        grade++;
+                    }
+            }
+
+        function exitPage(){
+            window.location.href="Trangchinh.html";
+        }
+
+        function showGrade(){
+            document.getElementById("show").style.display="block";
+            var check=true;
+            var m=document.getElementsByClassName("alert alert-success");
+            var k=document.getElementsByClassName("question-form");
+
+            for(var i=0;i<k.length;i++){
+                check=false;
+                var str="Đáp án là: ";
+                var s="Bạn đã chọn đáp án: ";
+                if(key[i]===user_key[i]) check=true;
+                if(user_key[i]!="."){
+                    s+=user_key[i]; 
+                }     
+                else{
+                    s+="Chưa chọn" ;
+                } 
+                str+=key[i];
+
+                m[i].style.display="";
+                m[i].innerHTML=s;
+                var node=document.createElement("div");
+                if(check==false) node.className="alert alert-danger";
+                node.innerHTML=str;
+                m[i].appendChild(node);
+            }
+            
+            var x=document.getElementById("grade");
+            x.textContent="Số câu trả lời đúng: " +grade+"/"+count;
+            var c=document.getElementById("grade_10")
+            c.textContent="Bạn đạt được: "+Math.round(grade/count*1000)/100 +" điểm";
+            
+        }
+    </script>
+</body>
+</html>

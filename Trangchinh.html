@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/user_main_style.css">
+    <title>Danh sách các kỳ thi</title>
+    <header class="header">
+        <img src="Logo PTIT.jpg" alt="Logo" style="width:120px;">
+        <h1 >Hệ thống thi trắc nghiệm</h1>
+    </header>
+</head>
+<body>
+    <main>
+        
+        <div class="exam-list">
+
+            <input type="text" id="search" placeholder="Tìm kiếm kỳ thi...">
+          
+            <select id="filter">
+              <option value="all">Tất cả</option>
+              <option value="active">Đang mở</option>
+              <option value="locked">Đã khóa</option> 
+            </select>
+          
+            <h2 class="section">Luyện tập</h2>
+            
+            <div class="exam green" data-status="active">
+              <h3>Bài tập 1</h3>  
+              <button>Bắt đầu thi</button>
+            </div>
+          
+            <div class="exam green" data-status="active">
+              <h3>Bài tập 2</h3>
+              <button>Bắt đầu thi</button>
+            </div>
+          
+            <h2 class="section">Giữa kỳ</h2>
+            
+            <div class="exam red" data-status="locked">
+              <h3>Bài kiểm tra 1</h3>
+              <button disabled>Bắt đầu thi</button> 
+            </div>
+          
+            <div class="exam green" data-status="active">
+              <h3>Bài kiểm tra 2</h3>
+              <button>Bắt đầu thi</button>
+            </div>
+            <h2 class="section">Cuối kỳ</h2>
+
+            <div class="exam red" data-status="locked">
+            <h3>Bài kiểm tra cuối kỳ</h3>
+            <button disabled>Bắt đầu thi</button> 
+            </div>
+          </div>    
+    
+    </main>
+    <script src="js/Trangchinh.js"></script>
+</body>
+</html>
